@@ -6,7 +6,7 @@ const IncomeExpenses = () => {
   const amounts = transactions.map(tx => tx.amount);
 
   const expense = (
-    amounts.filter(item => item < 0).reduce((acc, item) => acc - item, 0) * -1
+    amounts.reduce((acc, item) => acc + item, 0)
   ).toFixed(2);
 
   return (

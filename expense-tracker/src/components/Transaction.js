@@ -15,7 +15,7 @@ const Transaction = ({ transaction }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    editTransaction({ ...editedTransaction, amount: +editedTransaction.amount });
+    editTransaction({ ...editedTransaction, amount: editedTransaction.amount });
     setIsEditing(false);
   };
 
@@ -61,7 +61,7 @@ const Transaction = ({ transaction }) => {
               color: '#000'
             }}>{transaction.category}</span>
           </td>
-          <td style={tdStyle}>{sign}£{Math.abs(transaction.amount)}</td>
+          <td style={tdStyle}>£{Math.abs(transaction.amount)}</td>
           <td style={tdStyle}>{transaction.date}</td>
           <td style={tdStyle}>
             <button onClick={() => deleteTransaction(transaction.id)} style={{ border: 'none', background: 'none', cursor: 'pointer', color: '#dc3545' }}>x</button>

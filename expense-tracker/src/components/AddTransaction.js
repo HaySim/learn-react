@@ -57,7 +57,7 @@ const AddTransaction = () => {
             id="amount"
             placeholder="Enter amount..."
             value={amount}
-            onChange={e => setAmount(e.target.value)}
+            onChange={e => setAmount(Math.abs(e.target.value))}
             required
           />
         </div>
