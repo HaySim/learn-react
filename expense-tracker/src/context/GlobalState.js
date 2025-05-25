@@ -4,13 +4,6 @@ const initialState = {
   transactions: [
     {
       id: 1,
-      text: 'Salary',
-      amount: 3000,
-      category: 'Salary',
-      date: '2025-05-01',
-    },
-    {
-      id: 2,
       text: 'Groceries',
       amount: -150,
       category: 'Food',
