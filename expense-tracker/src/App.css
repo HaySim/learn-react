@@ -1,0 +1,259 @@
+/* Edit */
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  justify-content: center;
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px 40px;
+  border-radius: 1px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  color: #000000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 0px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+/* Balance */
+h4 {
+  font-weight: 600;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 3rem;
+  color: #b11a1a;
+}
+
+.money {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.money.minus {
+  color: #c0392b;
+}
+
+/* History */
+h3 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.list {
+  list-style: none;
+  max-height: 200px;
+  overflow-y: auto;
+  padding-left: 0;
+  margin-bottom: 30px;
+}
+
+.list li {
+  background: #f7f9fa;
+  padding: 12px 20px;
+  border-radius: 1px;
+  border-right: 5px solid #2ecc71;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.list li.minus {
+  border-right-color: #c0392b;
+}
+
+.list li .category-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: hwb(0 58% 42%);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 1px;
+  margin-right: 8px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.list li small {
+  margin-left: 10px;
+  color: #777;
+  font-style: italic;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+}
+
+.list li button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 10px;
+  color: #888;
+  transition: color 0.3s;
+}
+
+.list li button:hover {
+  color: #502c3f;
+}
+
+.edit-btn {
+  color: #2980b9;
+}
+
+.edit-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.edit-form input,
+.edit-form select {
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  border: 0.5px;
+  border-radius: 0.5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.5px #ccc;
+}
+
+.edit-form button {
+  padding: 6px 12px;
+  margin-left: 5px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.edit-form button[type="submit"] {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.edit-form button[type="button"] {
+  background-color: #c0392b;
+  color: #fff;
+}
+
+/* Add Transaction */
+.form-control {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-control input,
+.form-control select {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 1px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.5px #cccccc;
+  border-color: #000000;
+}
+
+.form-control input:focus,
+.form-control select:focus {
+  box-shadow: 0 0 0 1.5px #2980b9;
+  outline: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1px;
+  background-color: #2980b9;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #17435f;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.filters select,
+.filters input {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border-radius: 1px;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.5px #ccc;
+}
+
+.filters button {
+  padding: 8px 12px;
+  background-color: #000000;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Only move the Reset Filters button to the right */
+.filters .reset-btn {
+  justify-content: end;
+}
+
+.filters button:hover {
+  background-color: #6c6c6c;
+}
+
+/* Chart */
+.chart-container {
+  width: 400px;
+  margin: 0 auto 30px auto;
+}
+
+.chart-container h3 {
+  margin-bottom: 15px;
+  color: #34495e;
+}
+
+.edit-form input,
+.edit-form select {
+  border: 1px solid #444 !important;
+}
